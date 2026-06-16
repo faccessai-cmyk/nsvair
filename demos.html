@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demos and Examples | NSVAIR Software Technology</title>
+  <meta name="description" content="Try simple NSVAIR website, software, AI and automation demos.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="NSVAIR Software Technology"></a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="demos.html" aria-current="page">Demos</a><a href="work.html">Work</a><a href="about.html">About</a><a class="nav-cta" href="contact.html">Start Project</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero compact">
+      <p class="eyebrow">Interactive demos</p>
+      <h1>Explore example tools NSVAIR can build for your business.</h1>
+      <p>These are lightweight front-end demos to show the style of practical software workflows.</p>
+    </section>
+    <section class="section demo-layout" id="software-demo">
+      <div class="demo-panel">
+        <p class="eyebrow">Software MVP estimator</p>
+        <h2>Project Scope Demo</h2>
+        <label>Project type<select id="projectType"><option value="website">Brand website</option><option value="portal">Customer portal</option><option value="saas">SaaS MVP</option><option value="automation">Automation suite</option></select></label>
+        <label>Number of pages or screens<input id="screenCount" type="range" min="4" max="40" value="12"><span id="screenCountLabel">12</span></label>
+        <label><input id="needsAi" type="checkbox"> Include AI workflow</label>
+        <label><input id="needsCloud" type="checkbox" checked> Include cloud deployment</label>
+      </div>
+      <div class="estimate-card">
+        <span>Example estimate</span>
+        <strong id="estimateWeeks">4-6 weeks</strong>
+        <p id="estimateSummary">A focused build with responsive UI, content pages and deployment support.</p>
+      </div>
+    </section>
+    <section class="section demo-grid">
+      <article class="demo-card" id="website-demo"><h2>Website Page Builder Example</h2><p>Select a business type and see the recommended site pages.</p><div class="segmented" data-page-demo><button data-type="startup" class="active">Startup</button><button data-type="clinic">Clinic</button><button data-type="agency">Agency</button></div><ul id="pagePlan"></ul></article>
+      <article class="demo-card" id="ai-demo"><h2>AI Assistant Example</h2><p>Choose a task and get a sample automation response.</p><select id="aiTask"><option value="support">Customer support summary</option><option value="lead">Lead qualification</option><option value="report">Weekly report draft</option></select><div class="response-box" id="aiResponse"></div></article>
+      <article class="demo-card" id="automation-demo"><h2>Automation Flow Example</h2><p>A sample lead workflow that can connect your forms, CRM and email.</p><ol class="flow-list"><li>Website form received</li><li>Lead scored by service interest</li><li>CRM record created</li><li>Sales email and owner alert sent</li></ol></article>
+    </section>
+  </main>
+  <footer class="site-footer"><div><img src="assets/logo.svg" alt="NSVAIR Software Technology"><p>Modern software, websites and automation for growing businesses.</p></div><nav><a href="services.html">Services</a><a href="demos.html">Demos</a><a href="work.html">Work</a><a href="contact.html">Contact</a></nav></footer>
+  <script src="script.js"></script>
+</body>
+</html>

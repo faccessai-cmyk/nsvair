@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | NSVAIR Software Technology</title>
+  <meta name="description" content="Contact NSVAIR Software Technology to plan a website, software product, automation or AI project.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="NSVAIR Software Technology"></a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="demos.html">Demos</a><a href="work.html">Work</a><a href="about.html">About</a><a class="nav-cta" href="contact.html" aria-current="page">Start Project</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero compact">
+      <p class="eyebrow">Start a project</p>
+      <h1>Tell NSVAIR what you want to build.</h1>
+      <p>Use the form as a project brief. It runs locally now and can be connected to email, CRM or a database later.</p>
+    </section>
+    <section class="section contact-layout">
+      <form class="contact-form" id="contactForm">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Project type<select name="project"><option>Website</option><option>Custom software</option><option>AI or automation</option><option>Cloud support</option><option>Brand identity</option></select></label>
+        <label>Budget range<select name="budget"><option>Starter</option><option>Growth</option><option>Custom quote</option></select></label>
+        <label>Project details<textarea name="details" rows="6" required placeholder="What should the website or software do?"></textarea></label>
+        <button class="button primary" type="submit">Generate Brief</button>
+      </form>
+      <aside class="brief-card">
+        <p class="eyebrow">Generated brief</p>
+        <h2 id="briefTitle">Your project summary will appear here.</h2>
+        <p id="briefBody">Fill out the form to create a clean starter brief for your NSVAIR project.</p>
+        <div class="contact-points">
+          <span>Email-ready project summary</span>
+          <span>Service recommendation</span>
+          <span>Next-step checklist</span>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div><img src="assets/logo.svg" alt="NSVAIR Software Technology"><p>Modern software, websites and automation for growing businesses.</p></div><nav><a href="services.html">Services</a><a href="demos.html">Demos</a><a href="work.html">Work</a><a href="contact.html">Contact</a></nav></footer>
+  <script src="script.js"></script>
+</body>
+</html>
